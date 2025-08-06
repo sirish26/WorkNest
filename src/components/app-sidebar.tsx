@@ -59,31 +59,32 @@ const data = {
     },
     {
       title: "Home",
-      url: "#",
+      url: "/home",
       icon: Home,
       isActive: true,
     },
     {
-      title: "Inbox",
-      url: "#",
+      title: "Chat",
+      url: "/chat",
+      icon: Inbox,
+      badge: "10",
+    },
+        {
+      title: "dashboard",
+      url: "/dashboard",
       icon: Inbox,
       badge: "10",
     },
   ],
   navSecondary: [
     {
-      title: "Calendar",
-      url: "#",
-      icon: Calendar,
-    },
-    {
       title: "Settings",
-      url: "#",
+      url: "/settings",
       icon: Settings2,
     },
     {
-      title: "Templates",
-      url: "#",
+      title: "vault",
+      url: "/vault",
       icon: Blocks,
     },
     {
