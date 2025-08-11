@@ -34,6 +34,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import { ColorModeSwitcher } from "./color-mode-switcher"
 
 const data = [
   [
@@ -107,12 +108,7 @@ export function NavActions() {
 
   return (
     <div className="flex items-center gap-2 text-sm">
-      {/* <div className="text-muted-foreground hidden font-medium md:inline-block">
-        Edit Oct 08
-      </div> */}
-      {/* <Button variant="ghost" size="icon" className="h-7 w-7">
-        <Star />
-      </Button> */}
+      <ColorModeSwitcher />
       <Popover open={isOpen} onOpenChange={setIsOpen}>
         <PopoverTrigger asChild>
           <Button

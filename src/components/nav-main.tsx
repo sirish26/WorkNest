@@ -31,5 +31,6 @@ export function NavMain({
         </SidebarMenuItem>
       ))}
     </SidebarMenu>
+  
   )
 }

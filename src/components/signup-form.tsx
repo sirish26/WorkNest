@@ -73,7 +73,7 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"div">)
               <div className="flex size-8 items-center justify-center rounded-md">
                 <GalleryVerticalEnd className="size-6" />
               </div>
-              <span className="sr-only">Acme Inc.</span>
+              {/* <span className="sr-only">Acme Inc.</span> */}
             </a>
             <h1 className="text-xl font-bold">Welcome to Worknest.</h1>
           </div>
@@ -91,12 +91,6 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"div">)
              <div className="grid gap-3">
                   <div className="flex items-center">
                     <Label htmlFor="password">Password</Label>
-                    {/* <a
-                      href="#"
-                      className="ml-auto text-sm underline-offset-4 hover:underline"
-                    >
-                      Forgot your password?
-                    </a> */}
                   </div>
                   <Input id="password" type="password" required value={password} onChange={(e)=>setPassword(e.target.value)}/>
                 </div>

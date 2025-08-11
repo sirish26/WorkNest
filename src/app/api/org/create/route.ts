@@ -4,10 +4,15 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, slug, email, ownerId } = await req.json();
+    const body = await req.json();
+    console.log("Request body:", body);
+    
+    const { name, slug, email, ownerId } = body;
 
-    if (!name || !slug || !email || !ownerId)
+    if (!name || !slug || !email || !ownerId) {
+      console.warn("Missing fields:", { name, slug, email, ownerId });
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
+    }
 
     await connectDB();
 
